@@ -36,13 +36,14 @@ int main() {
 
             if (cin.fail() || rows < 1 || rows > 20) {
                 cout << "Invalid input. Please enter a number between 1 and 20.\n";
-                cin.clear(); // clear error flag
-                cin.ignore(10000, '\n'); // discard input
+                cin.clear(); 
+                cin.ignore(10000, '\n'); 
             }
         } while (rows < 1 || rows > 20);
 
         // Display the patterns
         displayPatternA(rows);
+        cout << "\n--------------------\n";
         displayPatternB(rows);
 
         // Ask user if they want to repeat
